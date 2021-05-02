@@ -1,6 +1,7 @@
 <?php
 
 namespace Abbe\Ip;
+
 use Abbe\Ip;
 
 use Anax\Commons\ContainerInjectableInterface;
@@ -33,7 +34,6 @@ class IPLookupController implements ContainerInjectableInterface
         $this->page->add('mine/iplookup/index', $data);
 
         return $this->page->render(["title" => "IP Validator"]);
-
     }
 
     public function indexActionPost()

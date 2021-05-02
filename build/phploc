@@ -7,14 +7,14 @@ Size
   Lines of Code (LOC)                              315
   Comment Lines of Code (CLOC)                      18 (5.71%)
   Non-Comment Lines of Code (NCLOC)                297 (94.29%)
-  Logical Lines of Code (LLOC)                      99 (31.43%)
-    Classes                                         99 (100.00%)
-      Average Class Length                          19
+  Logical Lines of Code (LLOC)                     101 (32.06%)
+    Classes                                        101 (100.00%)
+      Average Class Length                          20
         Minimum Class Length                         9
-        Maximum Class Length                        45
+        Maximum Class Length                        47
       Average Method Length                          6
         Minimum Method Length                        1
-        Maximum Method Length                       24
+        Maximum Method Length                       26
       Average Methods Per Class                      2
         Minimum Methods Per Class                    2
         Maximum Methods Per Class                    4

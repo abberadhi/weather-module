@@ -1,8 +1,9 @@
 <?php
 
 namespace Abbe\Ip;
-use Abbe\Ip;
 
+use Abbe\Ip;
+use Abbe\Ip\IPAPIController;
 use Anax\Controller\SampleAppController;
 use Anax\DI\DIMagic;
 use Anax\Response\ResponseUtility;
@@ -56,18 +57,20 @@ class IPAPIControllerTest extends TestCase
         $di = $this->di;
 
         // Setup the controller
-        $this->controller = new \Abbe\Ip\IPAPIController();
+        $this->controller = new IPAPIController();
         $this->controller->setDI($this->di);
         $this->controller->initialize();
     }
 
-    public function testDataActionPost() {
+    public function testDataActionPost()
+    {
         $this->di->request->setPost("ip", "51.15.108.143");
         $res = $this->controller->dataActionPost();
         $this->assertContains("143-108-15-51.instances.scw.cloud", $res[0]);
     }
 
-    public function testDataActionFail() {
+    public function testDataActionFail()
+    {
         $res = $this->controller->dataActionPost();
 
         $this->assertContains("Not a valid ip", $res);
