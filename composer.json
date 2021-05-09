@@ -20,7 +20,7 @@
             "Abbe\\": "src/"
         }
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=7.4",
