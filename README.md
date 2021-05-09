@@ -17,8 +17,25 @@ composer require abberadhi/weather-module
 stand in root
 
 ```
-rsync -av ./vendor/abberadhi/weather-module/ ./
+rsync -av ./vendor/abberadhi/weather-module/config/ ./config/
 ```
+
+```
+rsync -av ./vendor/abberadhi/weather-module/src/ ./src/
+```
+
+```
+rsync -av ./vendor/abberadhi/weather-module/view/ ./view/
+```
+
+```
+rsync -av ./vendor/abberadhi/weather-module/view/ ./view/
+```
+
+```
+rsync -av ./vendor/abberadhi/weather-module/test/ ./test/
+```
+
 
 ### api keys
 * Make a copy of ``.weatherapi-example.json`` and name it ``.weatherapi.json``, put in your personal api key
@@ -30,5 +47,12 @@ rsync -av ./vendor/abberadhi/weather-module/ ./
 in your ``config/page.php``, insert this line under ``stylesheets``
 
 ```
-css/weather.css
+"css/weather.css"
+```
+
+### test
+
+run
+```
+sudo make test
 ```
