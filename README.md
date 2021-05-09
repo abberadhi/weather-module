@@ -18,22 +18,17 @@ stand in root
 
 ```
 rsync -av ./vendor/abberadhi/weather-module/config/ ./config/
-```
 
-```
 rsync -av ./vendor/abberadhi/weather-module/src/ ./src/
-```
 
-```
 rsync -av ./vendor/abberadhi/weather-module/view/ ./view/
-```
 
-```
 rsync -av ./vendor/abberadhi/weather-module/view/ ./view/
-```
 
-```
 rsync -av ./vendor/abberadhi/weather-module/test/ ./test/
+
+rsync -av ./vendor/abberadhi/weather-module/htdocs/css ./htdocs
+
 ```
 
 
