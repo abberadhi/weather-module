@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629494285">
-  <project timestamp="1629494285">
+<coverage generated="1629495408">
+  <project timestamp="1629495408">
     <package name="Abbe\Controller">
       <file name="/home/abbe/Documents/dbwebb-kurser/ramverk1/me/module/src/Controller/WeatherAPIController.php">
         <class name="Abbe\Controller\WeatherAPIController" namespace="Abbe\Controller">
