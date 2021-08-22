@@ -26,11 +26,11 @@ jobs:
 
             #- run: composer install -n --prefer-dist
             - run: make install
+            - run: XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-text 
 
             - save_cache:
                 paths:
                     - ./vendor
                 key: v1-dependencies-{{ checksum "composer.json" }}
-
             - run: make check
             - run: make test
