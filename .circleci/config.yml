@@ -26,8 +26,6 @@ jobs:
 
             #- run: composer install -n --prefer-dist
             - run: make install
-            - run: XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-text 
-
             - save_cache:
                 paths:
                     - ./vendor
